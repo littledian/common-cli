@@ -1,0 +1,29 @@
+{
+  "name": "@littledian/cli",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "littledian <1197434548@qq.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types",
+  "directories": {
+    "lib": "lib",
+    "types": "types"
+  },
+  "files": [
+    "lib",
+    "types"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npm.taobao.org/"
+  },
+  "scripts": {
+    "build": "npm run clean & tsc",
+    "clean": "rimraf lib & rimraf types"
+  },
+  "dependencies": {
+    "commander": "^5.1.0",
+    "inquirer": "^7.1.0"
+  }
+}
